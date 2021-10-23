@@ -50,7 +50,7 @@ function init() {
   button.addEventListener('click', () => {
     audio_player.play();
 
-    if (horn_selector.value == "party-horn") {
+    if (horn_selector.value == "party-horn" && volume_input.value != 0) {
       jsConfetti.addConfetti()
     }
   });
